@@ -1,4 +1,4 @@
-# mid: Macroeconomics 17q4
+# hw05: Macroeconomics 18Q1
 
 Publish: 2018-04-06  
 Suggested Deadline: 2018-05-18

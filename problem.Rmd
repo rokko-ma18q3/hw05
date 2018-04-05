@@ -1,0 +1,88 @@
+---
+title: 'hw05'
+author: | 
+  | Kenji Sato
+  | Kobe University
+  | Email: mail@kenjisato.jp
+date: |
+  | `r format(Sys.time(), "%Y/%m/%d")`
+output:
+  bookdown::pdf_document2:
+    fig_caption: yes
+    includes:
+      in_header: asset/latex/custom.sty
+    keep_tex: no
+    latex_engine: pdflatex
+    number_sections: yes
+    template: null
+    toc: no
+  bookdown::html_document2: default
+documentclass: scrartcl
+---
+
+# Overview {-}
+
+## Instructions {-}
+
+In this exam, you will
+
+- clone the assignment repository and make a working branch (eg. `solution` branch);
+- solve all the problems in Sections \@ref(solow), \@ref(convergence) and \@ref(mrw); 
+- write the solutions in `solution.Rmd`; 
+- commit `solution.Rmd` and `solution.pdf`; and 
+- open a Pull Request by the deadline.
+
+
+You may work with classmates, but:
+
+1. You must try the problems on your own first;
+2. You must write up your answers yourself, in your own words.;
+3. If you work with others, you should thank them in an acknowledgment 
+   footnote or section at the start of your document. 
+
+\pagebreak
+
+# Problem: Solow {#solow}
+
+Consider the Solow model and assume that the economy is on the balanced growth path at $t = 0$. 
+
+There is a temporary increase in $g$, starting at $t_0 > 0$, probably due to a big event in science and technology. This boom ends at $t_1 > t_0$. 
+
+1. Describe the dynamics of $k = K/AL$ from $t = 0$ on.
+2. Describe the transition dynamics of major macroeconomic variables.
+3. Describe the long-run dynamics, i.e., the dynamics in the final steady state.
+
+Make sure to show me that you understand
+
+- the mathematical logic; 
+- the economic idea behind the math; and
+- how to explain those things in words and with graphs (similar to Figures 1.4, 1.5 in Romer's textbook).
+
+
+# Problem: Convergence {#convergence}
+
+The Solow model predicts a negative correlation between average growth rate during a period of time 
+and initial income per capita. See Figures 1.7, 1.8 in Romer's textbook. Reproduce these figures but with the 
+Penn World Table v9.0  dataset, and observe whether his discussion in the textbook is valid for the updated data. 
+
+Produce graphs and report on what you observe for the following cases. 
+
+1. Include all the available countries in your analysis.
+2. Restrict your sample to OECD countries.
+3. Perform a simple linear regression for 1 and 2 to check that the negative 
+   correlation (if any) is statistically significant. 
+
+# Problem: MRW {#mrw}
+
+Conduct two regression analyses similar to those discussed in the slides for Day 5:
+
+- non-restricted, bivariate OLS
+- restricted, simple OLS
+
+Use PWT v9.0 dataset restricted to the subset containing the countries the populations of which in 1960 are more than 1 million. Compare the results with the MRW paper.
+
+
+
+
+
+
